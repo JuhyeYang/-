@@ -1,0 +1,84 @@
+/*===========================================================================
+ 메인
+============================================================================*/
+.mob { display: none; }
+.pc { display: block; }
+.pass-swiper {  display: none; }
+main { padding-top: 96px; } 
+main section { padding: 64px 165px; } 
+main .sec01 img { width: 100%; }
+main .sec01 .txt-wrap h2 { font-weight: 900; font-size: 56px; line-height: 60px; } 
+main .sec01 .txt-wrap .cont { margin-top: 24px; font-weight: 400; font-size: 18px; line-height: 28px; } 
+main .sec01 .btn-box { display: flex; align-items: center; margin-top: 40px; } 
+main .sec01 .btn-box p { margin-left: 20px; padding-right: 150px; font-weight: 600; font-size: 14px; line-height: 20px; } 
+main .sec02 { background: #F3F3F3; } 
+main .sec02 ul { display: flex; justify-content: space-between; } 
+main .sec02 li { width: calc(100%/3); margin-right: 36px; } 
+main .sec02 .feature-tit { display: flex; align-items: center; } 
+main .sec02 li:last-child { margin-right: 0; } 
+main .sec02 .feature-tit .circ { width: 40px; height: 40px; margin-right: 16px; background: #000000; border-radius: 100%; } 
+main .sec02 .feature-tit .tit { font-weight: 700; font-size: 18px; line-height: 28px; } 
+main .sec02 li p { margin-top: 16px; font-weight: 400; font-size: 16px; line-height: 24px; } 
+main .sec03 { background: #000000; } 
+main .sec03 img { width: 100%; }
+main .sec03 .txt-group { margin-left: 133px; } 
+main .sec03 .txt-group h4 { font-weight: 900; font-size: 24px; line-height: 32px; color: #fff; } 
+main .sec03 .txt-group p { margin-top: 16px; font-weight: 400; font-size: 16px; line-height: 24px; color: #fff; } 
+main .sec03 .txt-group .txt-box { margin-top: 16px; } 
+main .sec03 .txt-group .txt-box .circ { width: 4px; height: 4px; margin-right: 12px; background: #FFFFFF; border-radius: 100%; } 
+main .sec03 .txt-group .txt-box .cont { font-weight: 400; font-size: 16px; line-height: 24px; color: #fff; } 
+main .sec04 { padding-top: 96px; }
+main .sec04 ul {  width: 100%; display: flex; justify-content: space-between; } 
+main .sec04 li { width: calc(100%/3); margin-right: 30px; padding: 24px; background: #F3F3F3; border-radius: 8px } 
+main .sec04 li:last-child { margin-right: 0; } 
+main .sec04 li>p { font-weight: 400; font-size: 18px; line-height: 28px; } 
+main .sec04 .wrap { margin-top: 56px; } 
+main .sec04 .wrap .name { margin-top: 16px; font-weight: 700; font-size: 16px; line-height: 24px; } 
+main .sec04 .wrap .sns-wrap { display: flex; justify-content: space-between; } 
+main .sec04 .wrap .sns-box { display: flex; } 
+main .sec04 .wrap .sns-box .twit { margin-left: 16px; } 
+main .sec05 { position: relative; border: 1px solid #000; } 
+main .sec05 { padding: 0; } 
+main .sec05 img { width: 100%; }
+main .sec05 .txt-box { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; } 
+main .sec05 .txt-box span { font-weight: 500; font-size: 16px; line-height: 24px; color: #fff; } 
+main .sec05 .txt-box h3 { margin-top: 12px; font-weight: 900; font-size: 40px; line-height: 48px; color: #fff; } 
+main .sec05 .txt-box .act-btn { margin-top: 32px; background: #fff; color: #000;  }
+
+
+
+/*===========================================================================
+ 반응형
+============================================================================*/
+
+@media(max-width:1024px) {
+    .pc { display: none; }
+    .mob { display: block; }
+    .pass-swiper { display: block; width: 1000px;  background: #eee; }
+
+    main .sec01 { display: none; }
+    main .sec02 { display: none; }
+    main .sec03 { display: none; }
+    main .sec05 {display: none; }
+    main .sec04 .container { display: none; }
+
+
+    main section { padding: 40px 32px; } 
+    main .sec01 { text-align: center; }
+    main .sec01 .container { flex-direction: column; }
+    main .sec01 .img-box { margin-top: 64px; }
+    main .sec01 .txt-wrap { width: 100%; margin: 0 auto; padding-right: 0; }
+    main .sec01 .btn-box { margin-top: 20px; justify-content: center; } 
+    main .sec01 .btn-box p { padding-right: 0; }
+    main .sec03 .container {  flex-direction: column; align-items: center; }
+    main .sec03 .txt-group { display: flex; justify-content: space-between; margin: 64px 0 64px; }
+    main .sec03 .txt-group>div { margin-left: 129px; }
+    main .swiper-slide { width: 300px; background: #eee; }
+    main .swiper-slide .swiper-pagination { display: block; border: 1px solid #000; }
+
+    footer { display: none; }
+
+
+ 
+
+}
